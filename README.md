@@ -32,20 +32,26 @@ Hardware – PCs, Cyclone II , USB flasher
 
 
 **Program:**
-
+```
+module experiment2(a,b,c,d,f1,w,x,y,z,f2);
+input a,b,c,d,w,x,y,z;
+output f1,f2;
+assign f1=((~b&~c)|(~a&b&d)|(a&b&~c));
+assign f2=((~y&z)|(x&y)|(w&y));
+endmodule
+```
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:*/
-
+Developed by:AKASH P RegisterNumber:24900264
+**TURTH TABLE**
+![392007889-b2e6f509-64de-444c-a5fa-e40898d2b160](https://github.com/user-attachments/assets/b9fee864-e586-44e6-9acc-3898c3c4a038)
+![392007968-0ff0cc8d-a388-4297-ac03-7771303160b7](https://github.com/user-attachments/assets/4664ae9a-828c-4090-a4de-4008537e2eb8)
 
 **RTL realization**
-
-**Output:**
-
-**RTL**
+![Screenshot 2024-12-06 205758](https://github.com/user-attachments/assets/50145bd0-521d-4dc7-8ee5-7cfe1da105e7)
 
 **Timing Diagram**
-
+![387574673-4bfc069b-5f93-4d1a-b89d-8529cbe889b7](https://github.com/user-attachments/assets/9fa5fc2f-22fd-4af3-87e7-074d052cdcee)
 **Result:**
 
 Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
